@@ -1,6 +1,6 @@
 import {render} from 'react-dom'
 import React from 'react'
-import {BioData} from './components/bioData.js'
+import {Layout} from './components/Layout.js'
 
-render(<BioData/>,document.getElementById('container'))
+render(<Layout/>,document.getElementById('container'))
 

@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  background-color: #F5F5F5;
+}
+:root {
+  --font-size : 14px;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font-size);
+  height: calc(100vh - 20px);
+  margin:10px;
+  background-color: #F5F5F5;
+
+  & > .leftNav {
+    width:225px;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+  & > .content{
+    flex:1;
+  }
+}
+
+

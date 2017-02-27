@@ -39,13 +39,30 @@ module.exports = {
     rules :[
       {
         test: /\.js$|\.jsx$/,
-        use: ['babel-loader'],
+        use: [
+          {
+            loader:'babel-loader',
+          }
+        ],
         exclude: /node_modules/
       },
       {
         test: /\.css$/,
-        use: ['style-loader','css-loader?modules','postcss-loader']
-
+        use: [
+          {
+            loader:'style-loader'
+          },
+          {
+            loader:'css-loader',
+            options: {
+              module: true,
+              localIdentName: '[name]_[local]_[hash:base64:5]'
+            }
+          },
+          {
+            loader:'postcss-loader',
+          },
+        ]
       }
     ]
   },

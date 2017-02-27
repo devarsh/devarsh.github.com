@@ -1,0 +1,46 @@
+.LeftNav {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  height: 100%;
+  & > .imageWrapper {
+      padding-bottom: 10px;
+    & >.Img {
+      height: 200px;
+      border-radius: 50%;
+      border:10px solid black;
+    }
+  }
+  & > .jumboBold {
+    font-weight:bolder;
+    font-size:40px;
+    padding-bottom: 10px;
+  }
+  & > .contactDetailsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: none;
+    line-height: 1.5;
+    padding-bottom: 10px;
+
+    & > .rightalign {
+      text-align: justify;
+    }
+  }
+  & > .contactDetailsCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-transform: none;
+    padding-top: 10px;
+  }
+}
+
+.socialLink {
+  color:black;
+}
+
+
+
