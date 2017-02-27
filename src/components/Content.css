@@ -51,7 +51,6 @@
   & .text {
     flex-grow: 1;
   }
-
 }
 .col {
     display: flex;
