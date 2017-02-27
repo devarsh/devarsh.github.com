@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%=htmlWebpackPlugin.options.title || 'Demo'%></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+<body style="margin:0px">
+  <div class="vertical-center-element" id="container">Application Context</div>
+  <!-- REACT_DEVTOOLS hook to link react with chrome devtools react -->
+  <%=htmlWebpackPlugin.files.webpackManifest%>
+  <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+</body>
+</html>
