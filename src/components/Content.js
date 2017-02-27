@@ -8,7 +8,7 @@ export class Content extends Component {
         <ul>
           <li>
             <div className={css["header"]}>About Me</div>
-              <div className={css["col"]}>
+              <div className={css["col"]} style={{textAlign: 'justify'}}>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               Aenean commodo ligula eget dolor.
               Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -25,7 +25,7 @@ export class Content extends Component {
                 </div>
                 <div className={css["text"]}>
                   Schooling <br/>
-                  N.R School
+                  NR School
                 </div>
               </div>
               <div className={css["row"]}>
@@ -42,7 +42,7 @@ export class Content extends Component {
                   <b>2011-2013</b>
                 </div>
                 <div className={css["text"]}>
-                  Masters of Computer Application <br/>
+                  Master of Computer Application <br/>
                   GLS ICT
                 </div>
               </div>
@@ -99,67 +99,9 @@ export class Content extends Component {
               </div>
             </div>
           </li>
+          <li/>
         </ul>
       </div>
     );
   }
 }
-
-
-/*
-<div className={css["content"]}>
-
-
-
-          <li>
-            <div className={css["content"]}>
-              <div className={css["header"]}>Work</div>
-
-                <div className={css["detailsRow"]}>
-                    <div><b>2013-2013</b></div>
-                    <div className={css["fixedWidthBox"]}>
-                      Internship <br/>
-                      NetLink
-                    </div>
-                  </div>
-
-                  <div className={css["detailsRow"]}>
-                    <div><b>2013-Now</b></div>
-                    <div className={css["fixedWidthBox"]}>
-                      Job <br/>
-                      Acute Informatics
-                    </div>
-                  </div>
-
-              </div>
-          </li>
-          <li>
-            <div className={css["content"]}>
-              <div className={css["header"]}>Family</div>
-                <div className={css["detailsCol"]}>
-
-                  <div className={css["detailsRow"]} style={{width:'200px'}}>
-                      <div>
-                        <b>Father</b><br/>
-                        <b>Occupation</b>
-                      </div>
-                      <div className={css["fixedWidthBox"]}>
-                        Muktesh Shah <br/>
-                        Business
-                      </div>
-                    </div>
-
-                    <div className={css["detailsRow"]} style={{width:'200px'}}>
-                      <div>
-                        <b>Mother</b><br/>
-                        <b>Occupation</b>
-                      </div>
-                      <div className={css["fixedWidthBox"]}>
-                        Ashini Shah <br/>
-                        HouseWife
-                      </div>
-                    </div>
-
-                  </div>
-              </div>
-*/

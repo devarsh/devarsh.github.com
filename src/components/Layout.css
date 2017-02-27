@@ -23,5 +23,6 @@ body {
     flex:1;
     overflow-y: auto;
     padding-left: 30px;
+    width: 400px;
   }
 }
