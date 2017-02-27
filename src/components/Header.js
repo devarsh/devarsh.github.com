@@ -6,12 +6,24 @@ export class Header extends Component {
     return (
       <div className={css["LeftNav"]}>
         <div className={css["imageWrapper"]}>
-          <img className={css["Img"]} src="https://placeimg.com/200/200/nature/grayscale" />
+          <img className={css["Img"]} src="https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/12976438_1045472078860895_444227948_n.jpg" />
         </div>
         <div className={css["jumboBold"]}>Devarsh <br/>Shah</div>
         <div className={css["contactDetailsRow"]}>
           <div><b>DOB:</b> </div>
           <div className={css["rightalign"]}>30-January-1990</div>
+        </div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Time:</b> </div>
+          <div className={css["rightalign"]}>6:45 PM</div>
+        </div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Place:</b> </div>
+          <div className={css["rightalign"]}>Ahmedabad, India</div>
+        </div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Religion:</b> </div>
+          <div className={css["rightalign"]}>Hindu, Vaishanav</div>
         </div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Address:</b> </div>
