@@ -27,7 +27,7 @@ export class Header extends Component {
         </div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Height:</b> </div>
-          <div className={css["rightalign"]}>5'7"</div>
+          <div className={css["rightalign"]}>5 ft. 7 in</div>
         </div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Weight:</b> </div>

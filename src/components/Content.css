@@ -38,6 +38,11 @@
   text-transform: uppercase;
   margin-bottom: 14px;
 }
+.headerSmall {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -61,5 +66,54 @@
   }
 
 
+@media only screen and (max-width: 480px) {
+  .timeline ul {
+  list-style: none;
+  position: relative;
+  padding-left: 0px;
+  }
+  .timeline ul:before {
+  content:'';
+  position: relative;
+  background-color: initial;
+  }
+  .timeline ul li {
+  padding:0px 0px;
+  padding-bottom: 30px;
+  }
+
+  .timeline ul li {
+    position: relative;
+  }
+
+  .timeline ul li:before {
+    content: '';
+    position: relative;
+    border-radius: initial;
+    border: 0px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-transform: none;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    & .label {
+      width:100px;
+    }
+    & .text {
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    margin: 10px 0;
+  }
+}
 
 
