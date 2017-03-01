@@ -39,7 +39,7 @@ export class Header extends Component {
           B-802 Retreat Tower<br/>
           Opp Shyamal Voltas<br/>
           Shyamal Cross Road<br/>
-          Satellite,Ahmedabad<br/>
+          Satellite, Ahmedabad<br/>
           </div>
         </div>
         <div className={css["contactDetailsCol"]}>

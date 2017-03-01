@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack-dev-server --config webpack/webpack.dev.config.js",
-    "build:prod": "webpack --config webpack/webpack.prod.config.js",
-    "static": "node src/express.js"
+    "build:prod": "npm run clean:prod && webpack --config webpack/webpack.prod.config.js && cp dist/*.* ./",
+    "static": "node src/express.js",
+    "clean:prod": "rm vendor.* manifest.* index.* bundle.*"
   },
   "repository": {
     "type": "git",

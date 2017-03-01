@@ -22,7 +22,7 @@ export class Content extends Component {
             <div className={css["col"]}>
               <div className={css["row"]}>
                 <div className={css["label"]}>
-                  <b>1995-2007</b>
+                  <b></b>
                 </div>
                 <div className={css["text"]}>
                   NR School
