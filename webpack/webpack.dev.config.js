@@ -78,6 +78,7 @@ module.exports = {
       template: './index.html',
       inject: true,
       devtool: true,
+      appMountId:'container',
     }),
   ],
 }

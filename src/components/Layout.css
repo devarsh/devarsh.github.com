@@ -40,6 +40,7 @@ body {
     & > .leftNav {
       width: 80%;
       margin: 0 auto;
+      overflow-y: initial;
     }
     & > .content {
       width:80%;
@@ -51,18 +52,27 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 600px)   {
   .layout {
     margin: 10px 0;
+    & > .leftNav {
+      overflow-y: initial;
+    }
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 720px) {
   .layout {
     margin: 10px 0;
+    & > .leftNav {
+      overflow-y: initial;
+    }
   }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 880px) {
   .layout {
     margin: 10px 30px;
+    & > .leftNav {
+      overflow-y: initial;
+    }
   }
 }
 
@@ -71,6 +81,9 @@ body {
     margin-right: 0px;
     & > .content {
       padding-right: 100px;
+    }
+    & > .leftNav {
+      overflow-y: initial;
     }
   }
 }
