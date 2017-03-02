@@ -77,6 +77,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true,
+      devtool: true,
     }),
   ],
 }

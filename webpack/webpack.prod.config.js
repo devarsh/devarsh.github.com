@@ -1,9 +1,15 @@
 const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const WebpackChunkHash = require("webpack-chunk-hash");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
+/*const CompressionPlugin = require("compression-webpack-plugin");*/
+/*const PreloadWebpackPlugin = require('preload-webpack-plugin');*/
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const ChunkManifestPlugin = require("chunk-manifest-webpack-plugin");
+const ScriptExtHtmlWebpackPlugin =require('script-ext-html-webpack-plugin');
 const basePath = path.resolve(__dirname,'../');
 const srcPath = path.resolve(basePath,'./src');
 const distPath = path.resolve(basePath,'./dist');
@@ -38,7 +44,6 @@ module.exports = {
     filename:'[name].[chunkhash].js',
     chunkFilename: "[name].[chunkhash].js",
   },
-  devtool: 'inline-source-map',
   devServer: {
     hot: true,
     contentBase: distPath,
@@ -79,11 +84,21 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
+    new WebpackChunkHash(),
+    new webpack.HashedModuleIdsPlugin(),
     new UglifyJSPlugin(),
-    new CompressionPlugin(),
+    /*new CompressionPlugin(),*/
     new webpack.optimize.CommonsChunkPlugin({
       name: ['vendor','manifest'],
       minChunks: Infinity,
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new ChunkManifestPlugin({
+      filename: "manifest.json",
+      manifestVariable: "webpackManifest"
     }),
     new ExtractTextPlugin({
       filename: 'bundle.css',
@@ -93,6 +108,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true,
+      title:'BioData',
+      appMountId:'container',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      inline: fs.readFileSync(path.join(srcPath,'./swReg.js'), 'utf8'),
     }),
+    new SWPrecacheWebpackPlugin({
+      // sw-precache options
+      cacheId: 'biodata-appcache-id:1',
+      filename: 'service-worker.js',
+      runtimeCaching: [{
+        handler: 'cacheFirst',
+        urlPattern: /(https?:\/\/fonts.+)|(https?:\/\/maxcdn.+)/
+      }],
+      filename: '/sw.js'
+    })
   ],
 }

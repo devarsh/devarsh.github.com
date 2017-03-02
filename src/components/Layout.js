@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import css from './Layout.css'
 import {Header} from './Header.js'
 import {Content} from './Content.js'
-
 export class Layout extends Component {
   render() {
     return (
