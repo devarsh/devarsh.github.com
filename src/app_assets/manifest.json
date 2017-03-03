@@ -1,0 +1,10 @@
+{
+  "lang": "en",
+  "name": "Devarsh",
+  "short_name": "Devarsh",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#F5F5F5",
+  "background_color": "#e8e8e8",
+}
