@@ -6,7 +6,7 @@ export class Header extends Component {
     return (
       <div className={css["LeftNav"]}>
         <div className={css["imageWrapper"]}>
-          <img className={css["Img"]} src="https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/12976438_1045472078860895_444227948_n.jpg" />
+          <img className={css["Img"]} src="https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/12976438_1045472078860895_444227948_n.jpg" alt="Profile Pic" />
         </div>
         <div className={css["jumboBold"]}>Devarsh Shah</div>
         <div className={css["contactDetailsRow"]}>
@@ -58,9 +58,9 @@ export class Header extends Component {
         </div>
         <br/><br/><br/>
         <div className={css["contactDetailsRow"]} style={{justifyContent:'space-around'}}>
-          <div><a className={css["socialLink"]} href="https://www.facebook.com/Dexter099" target="_blank"><i className="fa-lg fa fa-facebook" aria-hidden="true"></i></a></div>
-          <div><a className={css["socialLink"]} href="https://www.instagram.com/devarsh_099/" target="_blank"><i className="fa-lg fa fa-instagram" aria-hidden="true"></i></a></div>
-          <div><a className={css["socialLink"]} href="https://twitter.com/_devarsh" target="_blank"><i className="fa-lg fa fa-twitter" aria-hidden="true"></i></a></div>
+          <div><a className={css["socialLink"]} href="https://www.facebook.com/Dexter099" rel="noopener" target="_blank"><i className="fa-lg fa fa-facebook" aria-hidden="true"></i></a></div>
+          <div><a className={css["socialLink"]} href="https://www.instagram.com/devarsh_099/" rel="noopener" target="_blank"><i className="fa-lg fa fa-instagram" aria-hidden="true"></i></a></div>
+          <div><a className={css["socialLink"]} href="https://twitter.com/_devarsh" rel="noopener" target="_blank"><i className="fa-lg fa fa-twitter" aria-hidden="true"></i></a></div>
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const SwPrecacheDevWebpackPlugin = require('sw-precache-webpack-dev-plugin');
 
 const basePath = path.resolve(__dirname,'../');
 const srcPath = path.resolve(basePath,'./src');
@@ -30,7 +31,7 @@ module.exports = {
     modules: [path.join(basePath, 'node_modules')],
     alias: {
       components : path.resolve(srcPath,'./components'),
-      assets : path.resolve(srcPath,'./assets')
+      assets : path.resolve(srcPath,'./app_assets')
     },
     enforceExtension: false,
     extensions: [".js", ".jsx"],
@@ -80,5 +81,14 @@ module.exports = {
       devtool: true,
       appMountId:'container',
     }),
+    new SwPrecacheDevWebpackPlugin({
+      cacheId: 'biodata-appcache-id:2',
+      filename: 'service-worker.js',
+      runtimeCaching: [{
+        handler: 'cacheFirst',
+        urlPattern: /(https?:\/\/fonts.+)|(https?:\/\/maxcdn.+)/
+      }],
+      filename: '/sw.js'
+    })
   ],
 }

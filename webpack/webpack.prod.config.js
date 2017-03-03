@@ -54,7 +54,7 @@ module.exports = {
     modules: [path.join(basePath, 'node_modules')],
     alias: {
       components : path.resolve(srcPath,'./components'),
-      assets : path.resolve(srcPath,'./assets')
+      assets : path.resolve(srcPath,'./app_assets')
     },
     enforceExtension: false,
     extensions: [".js", ".jsx"],
@@ -108,7 +108,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true,
-      title:'BioData',
+      title:'Devarsh BioData',
       appMountId:'container',
       minify: {
         removeComments: true,
