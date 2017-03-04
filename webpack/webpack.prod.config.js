@@ -112,9 +112,10 @@ module.exports = {
       appMountId:'container',
       minify: {
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: false,
       },
       inline: fs.readFileSync(path.join(srcPath,'./swReg.js'), 'utf8'),
+      ga: fs.readFileSync(path.join(srcPath,'./ga.js'), 'utf8')
     }),
     new SWPrecacheWebpackPlugin({
       // sw-precache options
