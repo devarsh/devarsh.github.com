@@ -4,7 +4,7 @@
   "short_name": "Devarsh",
   "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "theme_color": "#F5F5F5",
   "background_color": "#F5F5F5",
   "icons": [{
