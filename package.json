@@ -8,7 +8,7 @@
     "build": "export NODE_ENV=development && webpack-dev-server --config webpack/webpack.dev.config.js",
     "build:prod": "export NODE_ENV=production && npm run clean && webpack --config webpack/webpack.prod.config.js && cp dist/*.* ./",
     "static": "node src/express.js",
-    "clean": "rm -rf vendor.* manifest.* index.* bundle.* dist/*.* *.png sw.js"
+    "clean": "rm -rf vendor.* manifest.* index.* bundle.* dist/*.* *.png sw.js *.html"
   },
   "repository": {
     "type": "git",

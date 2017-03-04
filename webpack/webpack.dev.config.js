@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SwPrecacheDevWebpackPlugin = require('sw-precache-webpack-dev-plugin');
@@ -78,8 +79,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true,
-      devtool: true,
+      title:'Devarsh BioData',
       appMountId:'container',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      inline: fs.readFileSync(path.join(srcPath,'./swReg.js'), 'utf8'),
     }),
     new SwPrecacheDevWebpackPlugin({
       cacheId: 'biodata-appcache-id:2',
