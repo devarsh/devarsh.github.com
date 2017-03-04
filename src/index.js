@@ -4,3 +4,4 @@ import {Layout} from './components/Layout.js'
 require('assets/include.js')
 render(<Layout/>,document.getElementById('container'))
 
+console.log('version 4')

@@ -30,7 +30,14 @@
     <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
   <% } %>
 
+  <% if(htmlWebpackPlugin.options.inline) { %>
   <script><%=htmlWebpackPlugin.options.inline%></script>
+  <% } %>
+  <% if(htmlWebpackPlugin.options.inline) { %>
   <script><%=htmlWebpackPlugin.options.ga%></script>
+  <% } %>
+  <script>
+  console.log('version 4')
+  </script>
 </body>
 </html>
