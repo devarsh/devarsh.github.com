@@ -25,11 +25,12 @@
   <% if (htmlWebpackPlugin.options.appMountId) { %>
     <div id="<%= htmlWebpackPlugin.options.appMountId %>"></div>
   <% } %>
-  <!-- REACT_DEVTOOLS hook to link react with chrome devtools react -->
-  <!--<%=htmlWebpackPlugin.files.webpackManifest%>-->
+
   <% if (htmlWebpackPlugin.options.devtools) { %>
     <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
   <% } %>
+
   <script><%=htmlWebpackPlugin.options.inline%></script>
+  <script><%=htmlWebpackPlugin.options.ga%></script>
 </body>
 </html>
