@@ -9,25 +9,16 @@ export class Content extends Component {
           <li>
             <div className={css["header"]}>About Me</div>
               <div className={css["col"]} style={{textAlign: 'justify'}}>
-                I'm a software developer, currently working at my our family firm,
-                where I help managing day in day out activities.
-                I'm tech savvy and love to stay at the edge of technology.
-                When I'm not working you can find me reading and exploring.
-                I'm huge fan of movies and sitcoms, and a food junkie.
-                I've wide
+                My job as a software engineer has made me a patient man and improved my negotiation skills!
+                My job also keeps me on my toes as I am always trying to learn new skills to keep pace with the changing technology landscape.
+                I especially value humor, being able to laugh at yourself and being able to communicate.
               </div>
           </li>
           <li>
             <div className={css["header"]}>Hobbies</div>
-            <div className={css["col"]}>
-              <div className={css["row"]}>
-                <div className={css["label"]}>
-                  <b></b>
-                </div>
-                <div className={css["text"]}>
-                  NR School
-                </div>
-              </div>
+            <div className={css["col"]} style={{textAlign: 'justify'}}>
+              Swimming, watching movies & sitcoms, traveling,
+              reading (not very often),
             </div>
           </li>
           <li>
