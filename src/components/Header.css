@@ -42,3 +42,9 @@
 .socialLink {
   color:black;
 }
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}

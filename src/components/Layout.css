@@ -87,3 +87,12 @@ body {
     }
   }
 }
+
+@media print {
+  .layout {
+    & > .content {
+      overflow-y: visible;
+    }
+  }
+}
+

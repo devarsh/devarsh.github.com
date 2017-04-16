@@ -57,7 +57,7 @@ export class Header extends Component {
           </div>
         </div>
         <br/><br/><br/>
-        <div className={css["contactDetailsRow"]} style={{justifyContent:'space-around'}}>
+        <div className={`${css["contactDetailsRow"]} ${css["hidden-print"]}`} style={{justifyContent:'space-around'}}>
           <div><a className={css["socialLink"]} href="https://www.facebook.com/Dexter099" rel="noopener" target="_blank"><i className="fa-lg fa fa-facebook" aria-hidden="true"></i></a></div>
           <div><a className={css["socialLink"]} href="https://www.instagram.com/devarsh_099/" rel="noopener" target="_blank"><i className="fa-lg fa fa-instagram" aria-hidden="true"></i></a></div>
           <div><a className={css["socialLink"]} href="https://twitter.com/_devarsh" rel="noopener" target="_blank"><i className="fa-lg fa fa-twitter" aria-hidden="true"></i></a></div>
