@@ -65,7 +65,7 @@ export class Content extends Component {
                 </div>
                 <div className={css["text"]}>
                   AcuteInformatics Pvt Ltd <br/>
-                  Database Administator
+                  Software Engineering
                 </div>
               </div>
             </div>
