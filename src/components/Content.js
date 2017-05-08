@@ -18,7 +18,7 @@ export class Content extends Component {
             <div className={css["header"]}>Hobbies</div>
             <div className={css["col"]} style={{textAlign: 'justify'}}>
               Swimming, watching movies & sitcoms, traveling,
-              reading (not very often),
+              reading (not very often), and try to hit gym from time to time.
             </div>
           </li>
           <li>
