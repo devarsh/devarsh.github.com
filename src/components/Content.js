@@ -18,7 +18,7 @@ export class Content extends Component {
             <div className={css["header"]}>Hobbies</div>
             <div className={css["col"]} style={{textAlign: 'justify'}}>
               Swimming, watching movies & sitcoms, traveling,
-              reading (not very often), and try to hit gym from time to time.
+              reading
             </div>
           </li>
           <li>
@@ -65,7 +65,7 @@ export class Content extends Component {
                 </div>
                 <div className={css["text"]}>
                   AcuteInformatics Pvt Ltd <br/>
-                  Software Engineering
+                  Software Engineer
                 </div>
               </div>
             </div>

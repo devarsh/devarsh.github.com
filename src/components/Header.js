@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import css from './Header.css'
 
+var kundli = require('file-loader?name=[name].[ext]!assets/kundli.webp')
+
 export class Header extends Component {
   render() {
     return (
@@ -10,15 +12,15 @@ export class Header extends Component {
         </div>
         <div className={css["jumboBold"]}>Devarsh Shah</div>
         <div className={css["contactDetailsRow"]}>
-          <div><b>DOB:</b> </div>
+          <div><b>Date of Birth:</b> </div>
           <div className={css["rightalign"]}>30-January-1990</div>
         </div>
         <div className={css["contactDetailsRow"]}>
-          <div><b>Time:</b> </div>
+          <div><b>Time of Birth:</b> </div>
           <div className={css["rightalign"]}>6:45 PM</div>
         </div>
         <div className={css["contactDetailsRow"]}>
-          <div><b>Place:</b> </div>
+          <div><b>Place of Birth:</b> </div>
           <div className={css["rightalign"]}>Ahmedabad, India</div>
         </div>
         <div className={css["contactDetailsRow"]}>
@@ -56,7 +58,15 @@ export class Header extends Component {
           </a>
           </div>
         </div>
-        <br/><br/><br/>
+        <br/>
+        <div className={`${css["contactDetailsCol"]} ${css["hidden-print"]}`}>
+          <div>
+          <a style={{color:'black'}} href={kundli} target="_top">
+            <b>Kundli</b>
+          </a>
+          </div>
+        </div>
+        <br/>
         <div className={`${css["contactDetailsRow"]} ${css["hidden-print"]}`} style={{justifyContent:'space-around'}}>
           <div><a className={css["socialLink"]} href="https://www.facebook.com/Dexter099" rel="noopener" target="_blank"><i className="fa-lg fa fa-facebook" aria-hidden="true"></i></a></div>
           <div><a className={css["socialLink"]} href="https://www.instagram.com/devarsh_099/" rel="noopener" target="_blank"><i className="fa-lg fa fa-instagram" aria-hidden="true"></i></a></div>
