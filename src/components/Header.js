@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import css from './Header.css'
+var headerImage = require('file-loader?name=[name].[ext]!assets/DSC_7811_sm.jpg')
 
 var kundli = require('file-loader?name=[name].[ext]!assets/kundli.webp')
 
@@ -8,7 +9,7 @@ export class Header extends Component {
     return (
       <div className={css["LeftNav"]}>
         <div className={css["imageWrapper"]}>
-          <img className={css["Img"]} src="https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/12976438_1045472078860895_444227948_n.jpg" alt="Profile Pic" />
+          <img className={css["Img"]} alt="Profile Pic" src={headerImage} />
         </div>
         <div className={css["jumboBold"]}>Devarsh Shah</div>
         <div className={css["contactDetailsRow"]}>
