@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import css from './Header.css'
-var headerImage = require('file-loader?name=[name].[ext]!assets/DSC_7811_sm.jpg')
+var headerImage = require('file-loader?name=[name].[ext]!assets/Profile_pix.jpg')
+//var headerImage = "https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/12976438_1045472078860895_444227948_n.jpg"
+//var headerImage = "https://scontent-bom1-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12976438_1045472078860895_444227948_n.jpg"
 
 var kundli = require('file-loader?name=[name].[ext]!assets/kundli.webp')
 
