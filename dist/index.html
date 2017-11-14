@@ -10,7 +10,7 @@
   <link rel="manifest" href="/appManifest.json">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Devarsh">
+  <meta name="application-name" content="DevarshBio">
   <meta name="apple-mobile-web-app-title" content="Devarsh">
 
   <meta name="msapplication-TileColor" content="#F5F5F5">
@@ -31,7 +31,8 @@
 
   
   <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').then(reg => {
+  var dtxx = Date.now()
+  navigator.serviceWorker.register(`./sw.js?t=${dtxx}`).then(reg => {
     console.log(`Registration succeeded. Scope is ${reg.scope}`);
   }).catch(err => {
     console.log(`Registration failed with ${err.toString()}`);
@@ -49,5 +50,5 @@ ga('send', 'pageview');
 
 </script>
   
-<script type="text/javascript" src="/manifest.d41d8cd98f00b204e980.js"></script><script type="text/javascript" src="/vendor.1ad09de8fa9d857425b4.js"></script><script type="text/javascript" src="/index.e320893db856962c7475.js"></script></body>
+<script type="text/javascript" src="/manifest.d41d8cd98f00b204e980.js"></script><script type="text/javascript" src="/vendor.1ad09de8fa9d857425b4.js"></script><script type="text/javascript" src="/index.f13cdb8a6d80f1ddfa34.js"></script></body>
 </html>
