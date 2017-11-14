@@ -24,7 +24,6 @@ export class Content extends Component {
           <li>
             <div className={css["header"]}>Education</div>
             <div className={css["col"]}>
-            { /*
               <div className={css["row"]}>
                 <div className={css["label"]}>
                   <b>1995-2007</b>
@@ -43,7 +42,6 @@ export class Content extends Component {
                   Somlalit Institue
                 </div>
               </div>
-            */}
               <div className={css["row"]}>
                 <div className={css["label"]}>
                   <b>2010-2013</b>
