@@ -50,7 +50,7 @@ export class Header extends Component {
         <div className={css["contactDetailsCol"]}>
           <div>Phone:</div>
           <div>
-          <a style={{color:'black'}} href="tel:+919925204916">99252-04916</a>
+          <a style={{color:'black'}} href="tel:+919925204916">9979-887896</a>
           </div>
         </div>
         <div className={css["contactDetailsCol"]}>
