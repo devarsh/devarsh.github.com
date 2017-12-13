@@ -7,7 +7,7 @@ export class Content extends Component {
       <div className={css["timeline"]}>
         <ul>
           <li>
-            <div className={css["header"]}>About Me</div>
+              <div className={css["header"]}>About Me</div>
               <div className={css["col"]} style={{textAlign: 'justify'}}>
                 My job as a software engineer has made me a patient man and improved my negotiation skills!
                 My job also keeps me on my toes as I am always trying to learn new skills to keep pace with the changing technology landscape.
@@ -104,7 +104,49 @@ export class Content extends Component {
               </div>
             </div>
           </li>
-          <li/>
+          <li>
+             <div className={css["header"]}>Paternal Family</div>
+             <div className={css["col"]}>
+              <div className={css["row"]}>
+                <div className={css["label"]}>
+                  <b>Grandfather</b><br/>
+                </div>
+                <div className={css["text"]}>
+                  Lt. Sashikant M. Shah<br/>
+                </div>
+              </div>
+              <div className={css["row"]}>
+                <div className={css["label"]}>
+                  <b>Grandmother</b><br/>
+                </div>
+                <div className={css["text"]}>
+                  Lt. Ushaben S. Shah
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+             <div className={css["header"]}>Maternal Family</div>
+             <div className={css["col"]}>
+              <div className={css["row"]}>
+                <div className={css["label"]}>
+                  <b>Grandfather</b><br/>
+                </div>
+                <div className={css["text"]}>
+                  Sureshbhai B. Mehta
+                  <br/>
+                </div>
+              </div>
+              <div className={css["row"]}>
+                <div className={css["label"]}>
+                  <b>Grandmother</b><br/>
+                </div>
+                <div className={css["text"]}>
+                  Veenaben S. Mehta
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     );

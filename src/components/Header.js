@@ -10,10 +10,10 @@ export class Header extends Component {
   render() {
     return (
       <div className={css["LeftNav"]}>
-        <div className={css["imageWrapper"]}>
+        { /* <div className={css["imageWrapper"]}>
           <img className={css["Img"]} alt="Profile Pic" src={headerImage} />
-        </div>
-        <div className={css["jumboBold"]}>Devarsh Shah</div>
+        </div> */ }
+        <div className={css["jumboBold"]} style={{"paddingTop":"15px"}}>Devarsh Shah</div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Date of Birth:</b> </div>
           <div className={css["rightalign"]}>30-January-1990</div>
@@ -27,8 +27,12 @@ export class Header extends Component {
           <div className={css["rightalign"]}>Ahmedabad, India</div>
         </div>
         <div className={css["contactDetailsRow"]}>
-          <div><b>Religion:</b> </div>
-          <div className={css["rightalign"]}>Hindu, Vaishanav</div>
+          <div><b>Cast:</b> </div>
+          <div className={css["rightalign"]}>Vaishanav Vanik</div>
+        </div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Sub Cast:</b> </div>
+          <div className={css["rightalign"]}>Visha khadayta</div>
         </div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Height:</b> </div>
@@ -47,15 +51,15 @@ export class Header extends Component {
           Satellite, Ahmedabad<br/>
           </div>
         </div>
-        <div className={css["contactDetailsCol"]}>
-          <div>Phone:</div>
-          <div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Phone:</b> </div>
+          <div className={css["rightalign"]}>
           <a style={{color:'black'}} href="tel:+919925204916">9979-887896</a>
           </div>
         </div>
-        <div className={css["contactDetailsCol"]}>
-          <div>Email:</div>
-          <div>
+        <div className={css["contactDetailsRow"]}>
+          <div><b>Email: </b></div>
+          <div className={css["rightalign"]}>
           <a style={{color:'black'}} href="mailto:devarshmshah@gmail.com?Subject=Lets Meetup :)" target="_top">
             devarshmshah@gmail.com
           </a>
