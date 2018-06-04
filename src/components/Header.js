@@ -5,14 +5,16 @@ var headerImage = require('file-loader?name=[name].[ext]!assets/Profile_pix.jpg'
 //var headerImage = "https://scontent-bom1-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12976438_1045472078860895_444227948_n.jpg"
 
 var kundli = require('file-loader?name=[name].[ext]!assets/kundli.webp')
+var pic1 = require('file-loader?name=[name].[ext]!assets/DSC_7811.JPG')
+var pic2 = require('file-loader?name=[name].[ext]!assets/DSC_7827.JPG')
 
 export class Header extends Component {
   render() {
     return (
       <div className={css["LeftNav"]}>
-        { /* <div className={css["imageWrapper"]}>
+        {/*  <div className={css["imageWrapper"]}>
           <img className={css["Img"]} alt="Profile Pic" src={headerImage} />
-        </div> */ }
+    </div>  */}
         <div className={css["jumboBold"]} style={{"paddingTop":"15px"}}>Devarsh Shah</div>
         <div className={css["contactDetailsRow"]}>
           <div><b>Date of Birth:</b> </div>
@@ -70,6 +72,12 @@ export class Header extends Component {
           <div>
           <a style={{color:'black'}} href={kundli} target="_top">
             <b>Kundli</b>
+          </a>
+          <a style={{color:'black'}} href={pic1} target="_blank">
+            <i style={{padding: "0px 20px 0px 20px"}} className="fa fa-picture-o" aria-hidden="true"></i>
+          </a>
+          <a style={{color:'black'}} href={pic2} target="_blank">
+            <i className="fa fa-picture-o" aria-hidden="true"></i>
           </a>
           </div>
         </div>

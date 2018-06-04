@@ -90,7 +90,7 @@ module.exports = {
     }),
     new SwPrecacheDevWebpackPlugin({
       // sw-precache options
-      cacheId: 'biodata-appcache-id:4',
+      cacheId: 'biodata-appcache-id:5',
       filename: 'service-worker.js',
       runtimeCaching: [{
         handler: 'cacheFirst',
