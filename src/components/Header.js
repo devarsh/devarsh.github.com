@@ -62,8 +62,8 @@ export class Header extends Component {
         <div className={css["contactDetailsRow"]}>
           <div><b>Email: </b></div>
           <div className={css["rightalign"]}>
-          <a style={{color:'black'}} href="mailto:devarshmshah@gmail.com?Subject=Lets Meetup :)" target="_top">
-            devarshmshah@gmail.com
+          <a style={{color:'black'}} href="mailto:ashini1965@gmail.com?Subject=Lets Meetup :)" target="_top">
+          ashini1965@gmail.com
           </a>
           </div>
         </div>

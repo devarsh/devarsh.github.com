@@ -9,16 +9,16 @@ export class Content extends Component {
           <li>
               <div className={css["header"]}>About Me</div>
               <div className={css["col"]} style={{textAlign: 'justify'}}>
-                My job as a software engineer has made me a patient man and improved my negotiation skills!
-                My job also keeps me on my toes as I am always trying to learn new skills to keep pace with the changing technology landscape.
-                I especially value humor, being able to laugh at yourself and being able to communicate.
+              <p>
+              Owner at <a href="http://www.acuteinformatics.co.in/">Acute Informatics Pvt Ltd.</a> My job keeps me at pace with the changing technology landscape. I value good sense of humor and understanding in a person.
+              </p>
               </div>
           </li>
           <li>
             <div className={css["header"]}>Hobbies</div>
             <div className={css["col"]} style={{textAlign: 'justify'}}>
               Swimming, watching movies & sitcoms, traveling,
-              reading
+              reading.
             </div>
           </li>
           <li>
@@ -63,7 +63,7 @@ export class Content extends Component {
                 </div>
                 <div className={css["text"]}>
                   AcuteInformatics Pvt Ltd <br/>
-                  Software Engineer
+                  Owner
                 </div>
               </div>
             </div>
