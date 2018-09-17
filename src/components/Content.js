@@ -10,7 +10,7 @@ export class Content extends Component {
               <div className={css["header"]}>About Me</div>
               <div className={css["col"]} style={{textAlign: 'justify'}}>
               <p>
-              Owner at <a href="http://www.acuteinformatics.co.in/">Acute Informatics Pvt Ltd.</a> & Veb Robomak Pvt Ltd. My job keeps me at pace with the changing technology landscape. I value good sense of humor and understanding in a person.
+              My job keeps me at pace with the changing technology landscape. I value good sense of humor and understanding in a person.
               </p>
               </div>
           </li>
@@ -61,7 +61,7 @@ export class Content extends Component {
                   Role
                 </div>
                 <div className={css["text"]}>
-                  Acute Informatics Pvt Ltd <br/>
+                <a href="http://www.acuteinformatics.co.in/">Acute Informatics Pvt Ltd</a> <br/>
                   Owner <br/>
                   Veb Robomak Pvt Ltd <br/>
                   Owner <br/>
