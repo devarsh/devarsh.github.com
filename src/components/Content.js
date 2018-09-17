@@ -10,15 +10,14 @@ export class Content extends Component {
               <div className={css["header"]}>About Me</div>
               <div className={css["col"]} style={{textAlign: 'justify'}}>
               <p>
-              Owner at <a href="http://www.acuteinformatics.co.in/">Acute Informatics Pvt Ltd.</a> My job keeps me at pace with the changing technology landscape. I value good sense of humor and understanding in a person.
+              Owner at <a href="http://www.acuteinformatics.co.in/">Acute Informatics Pvt Ltd.</a> & Veb Robomak Pvt Ltd. My job keeps me at pace with the changing technology landscape. I value good sense of humor and understanding in a person.
               </p>
               </div>
           </li>
           <li>
             <div className={css["header"]}>Hobbies</div>
             <div className={css["col"]} style={{textAlign: 'justify'}}>
-              Swimming, watching movies & sitcoms, traveling,
-              reading.
+              Reading, traveling, watching movies & sitcoms, swimming.
             </div>
           </li>
           <li>
@@ -62,8 +61,20 @@ export class Content extends Component {
                   Role
                 </div>
                 <div className={css["text"]}>
-                  AcuteInformatics Pvt Ltd <br/>
-                  Owner
+                  Acute Informatics Pvt Ltd <br/>
+                  Owner <br/>
+                  Veb Robomak Pvt Ltd <br/>
+                  Owner <br/>
+                </div>
+              </div>
+              <div className={css["row"]}>
+                <div className={css["label"]}>
+                  <b>2017-Now</b><br/>
+                  Role
+                </div>
+                <div className={css["text"]}>
+                  Shrenik Limited <br/>
+                  Independent Director <br/>
                 </div>
               </div>
             </div>
@@ -78,7 +89,7 @@ export class Content extends Component {
                 </div>
                 <div className={css["text"]}>
                   Muktesh Shah<br/>
-                  AcuteInformatics Pvt Ltd<br/>(Director) <br/>
+                  Acute Informatics Pvt Ltd<br/>(Director) <br/>
                   Veb Robomak Pvt Ltd <br/>(Director)
                 </div>
               </div>
